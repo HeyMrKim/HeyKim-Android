@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/home"
+            android:icon="@drawable/home"
+            android:title="메인화면" />
+        <item
+            android:id="@+id/book"
+            android:icon="@drawable/book"
+            android:title="예약하기" />
+        <item
+            android:id="@+id/bm"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="예약보기" />
+        <item
+            android:id="@+id/settings"
+            android:icon="@drawable/settings"
+            android:title="설정" />
+
+    </group>
+
+    <item android:title="더보기">
+        <menu>
+            <item
+                android:id="@+id/like"
+                android:icon="@drawable/like"
+                android:title="앱평가" />
+            <item
+                android:id="@+id/about"
+                android:icon="@drawable/about"
+                android:title="앱설명" />
+            <item
+                android:id="@+id/exit"
+                android:icon="@drawable/ic_menu_send"
+                android:title="종료" />
+        </menu>
+    </item>
+
+</menu>
