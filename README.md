@@ -1,6 +1,4 @@
 # HeyKim-Android
-hello
-hello2
-hello3
 
-hello you
+
+![Layout Image](\readmeImage\login_sample.PNG)
