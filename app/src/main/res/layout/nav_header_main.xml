@@ -1,25 +1,17 @@
-<RelativeLayout android:layout_width="match_parent"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
     android:layout_height="150dp"
-    android:background="@drawable/side_nav_bar"
-    xmlns:android="http://schemas.android.com/apk/res/android">
+    android:background="@color/colorPrimaryDark">
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="50dp"
-        android:layout_marginTop="50dp"
-        android:text="메뉴"
-        android:textColor="#32312d"
-        android:textSize="30sp"
-        android:textStyle="bold" />
-    <TextView
+        android:id="@+id/loginbutton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="45dp"
         android:gravity="center"
         android:text="LOGIN"
-        android:id="@+id/loginbutton"
-        android:textColor="#32312d"
-        android:textStyle="bold"
+        android:textColor="#FBFBF7"
         android:textSize="35sp"
-        android:layout_alignParentBottom="true"/>
+        android:textStyle="bold" />
 </RelativeLayout>

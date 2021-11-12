@@ -11,7 +11,7 @@
             android:icon="@drawable/book"
             android:title="예약하기" />
         <item
-            android:id="@+id/bm"
+            android:id="@+id/button6"
             android:icon="@drawable/ic_menu_slideshow"
             android:title="예약보기" />
         <item

@@ -45,6 +45,7 @@ Toolbar toolbar;
         View v = navigationView.getHeaderView(0);
 
 
+
         t = (TextView) v.findViewById(R.id.loginbutton);
         FirebaseUser user=firebaseAuth.getInstance().getCurrentUser();
         if(user!=null){
@@ -131,7 +132,7 @@ Toolbar toolbar;
                 ft.replace(R.id.l1, new setting_frag());
                 ft.commit();
             }
-        else if (id==R.id.bm){
+        else if (id==R.id.button6){
                 Uri uri = Uri.parse("https://www.imdb.com/"); // missing 'http://' will cause crashed
                 Intent intent = new Intent(Intent.ACTION_VIEW, uri);
                 startActivity(intent);

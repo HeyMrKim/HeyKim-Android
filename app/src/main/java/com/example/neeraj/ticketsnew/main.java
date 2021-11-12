@@ -24,8 +24,8 @@ import android.widget.Toast;
 
 
 public class main extends Fragment {
-    String movies[] = {"Baaghi 2","Blackmail","October","Raid","Rampage"};
-    String actors[] = {"Tiger Shroff","Irrfan Khan","Varun Dhawan","Ajay Devgn","Dwayne Johnson"};
+    String movies[] = {"회사1","회사2","회사3","회사4","회사5"};
+    String actors[] = {"수도꼭지","벽지","장판","침대","창문"};
     int imageids[] = {R.drawable.baagi,R.drawable.blackmail,R.drawable.october,R.drawable.raid,R.drawable.rampage};
     String imdblink[] = {"https://www.imdb.com/title/tt6843812/?ref_=nv_sr_1",
             "https://www.imdb.com/title/tt6972140/?ref_=nv_sr_2",
