@@ -13,7 +13,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
-import android.widget.ImageButton;
 import android.widget.RatingBar;
 import android.widget.Toast;
 
@@ -35,9 +34,10 @@ public class home extends Fragment {
     ImageButton bm;
   */
 
-    ImageButton ib4;
-    ImageButton ib7;
-    ImageButton bm;
+
+    Button ib4;
+    Button ib7;
+    Button bm;
 
 
     Button ib2;
@@ -65,22 +65,22 @@ public class home extends Fragment {
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
 
-        ib7 = (ImageButton) v.findViewById(R.id.button7);
+        ib7 = v.findViewById(R.id.button14);
         //ib2 = (ImageButton) v.findViewById(R.id.button2);
         //ib5 = (ImageButton) v.findViewById(R.id.bm);
-        ib4 = (ImageButton) v.findViewById(R.id.button4);
+        ib4 = v.findViewById(R.id.button12);
         //ib6 = (ImageButton) v.findViewById(R.id.button7);
-        bm = (ImageButton) v.findViewById(R.id.bm);
+        bm =  v.findViewById(R.id.button9);
 
 
-        ib6 =  v.findViewById(R.id.button6);
-        ib2 =  v.findViewById(R.id.button2);
+        ib6 =  v.findViewById(R.id.button14);
+        ib2 =  v.findViewById(R.id.button14);
         //ib5 =  v.findViewById(R.id.button5);
         //ib4 =  v.findViewById(R.id.button2);
         //ib6 =  v.findViewById(R.id.button6);
-        ib5 =   v.findViewById(R.id.button5);
+        ib5 =   v.findViewById(R.id.button14);
 
-        ib8 = v.findViewById(R.id.book);
+        ib8 = v.findViewById(R.id.button14);
 
 
 
