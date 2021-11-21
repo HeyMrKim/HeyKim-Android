@@ -8,8 +8,9 @@ import retrofit2.converter.gson.GsonConverterFactory;
 public class RetrofitClient {
     private static RetrofitClient instance = null;
     private static initMyApi initMyApi;
+    private static initMyApi2 initMyApi2;
     //사용하고 있는 서버 BASE 주소
-    private static String baseUrl = "http://3.38.115.233:8080/all/";
+    private static String baseUrl = "http://3.38.115.233:8080/";
 
 
 
@@ -29,6 +30,7 @@ public class RetrofitClient {
                 .build();
 
         initMyApi = retrofit.create(initMyApi.class);
+        initMyApi2 = retrofit.create(initMyApi2.class);
     }
 
     public static RetrofitClient getInstance() {
@@ -41,4 +43,5 @@ public class RetrofitClient {
     public static initMyApi getRetrofitInterface() {
         return initMyApi;
     }
+    public static initMyApi2 getRetrofitInterface2() { return initMyApi2; }
 }
