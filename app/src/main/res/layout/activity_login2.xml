@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:focusableInTouchMode="true"
+        android:focusable="true">
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_logo"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="150dp"/>
+
+        <TextView
+            android:id="@+id/tv_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/logo"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="50dp"
+            android:text="#푸드는 사장님의 번창을 기원합니다"
+            android:textSize="15dp"
+            android:includeFontPadding="false"
+            android:layout_marginLeft="50dp" />
+
+        <EditText
+            android:id="@+id/insert_id"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginEnd="50dp"
+            android:textSize="15dp"
+            android:textColor="@android:color/background_dark"
+            android:includeFontPadding="false"
+            android:hint="아이디"
+            android:paddingLeft="10dp"
+            android:gravity="center|start"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_content"
+            android:layout_marginTop="10dp"
+            android:maxLines="1"
+            android:imeOptions="actionDone"/>
+
+        <EditText
+            android:id="@+id/insert_password"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginEnd="50dp"
+            android:textSize="15dp"
+            android:textColor="@android:color/background_dark"
+            android:includeFontPadding="false"
+            android:hint="비밀번호"
+            android:inputType="textPassword"
+            android:paddingLeft="10dp"
+            android:gravity="center|start"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/insert_id"
+            android:maxLines="1"
+            android:imeOptions="actionDone"/>
+
+        <CheckBox
+            android:id="@+id/autoLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="자동로그인"
+            android:textSize="15dp"
+            android:includeFontPadding="false"
+            app:layout_constraintTop_toBottomOf="@+id/insert_password"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="45dp"/>
+
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/autoLogin"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="10dp"
+            android:text="로그인"
+            android:textSize="15dp"
+            android:includeFontPadding="false"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.appcompat.widget.LinearLayoutCompat>
