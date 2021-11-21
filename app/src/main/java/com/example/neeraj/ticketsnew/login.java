@@ -54,6 +54,12 @@ public class login extends AppCompatActivity implements View.OnClickListener {
         tvSignUp.setOnClickListener(this);
     }
 
+
+
+
+
+
+
     private void userLogin(){
         String email=etLoginEmail.getText().toString().trim();
         String password=etLoginPass.getText().toString().trim();
