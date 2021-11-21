@@ -21,9 +21,9 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 
-
-
 public class main extends Fragment {
+
+
     String movies[] = {"회사1","회사2","회사3","회사4","회사5"};
     String actors[] = {"수도꼭지","벽지","장판","침대","창문"};
     int imageids[] = {R.drawable.baagi,R.drawable.blackmail,R.drawable.october,R.drawable.raid,R.drawable.rampage};
@@ -49,6 +49,7 @@ public class main extends Fragment {
     @Override
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
+
 
     l = (ListView) v.findViewById(R.id.movie_list);
     movieadapter adapter = new movieadapter(getContext());
@@ -108,9 +109,12 @@ public class main extends Fragment {
 
                     et.putString("movie",movies[position]);
                     et.commit();
+
                 FragmentTransaction ft = getActivity().getSupportFragmentManager().beginTransaction();
-                    ft.replace(R.id.l1,new fragtwo());
+                    ft.replace(R.id.l1,new CompactCalendarTab());
                     ft.commit();
+
+                    //Intent intent = new Intent(getActivity(), CompactCalendarTab.class); startActivity(intent);
 
                 }
             });

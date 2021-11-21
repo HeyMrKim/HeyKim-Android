@@ -1,0 +1,89 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    android:id="@+id/main_content"
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.github.sundeepk.compactcalendarview.CompactCalendarView
+            android:id="@+id/compactcalendar_view"
+            android:layout_width="fill_parent"
+            android:layout_height="215dp"
+            app:compactCalendarBackgroundColor="#3F51B5"
+            app:compactCalendarCurrentDayBackgroundColor="#00BCD4"
+            app:compactCalendarCurrentDayIndicatorStyle="fill_large_indicator"
+            app:compactCalendarCurrentSelectedDayBackgroundColor="#2196F3"
+            app:compactCalendarEventIndicatorStyle="small_indicator"
+            app:compactCalendarOtherMonthDaysTextColor="#534c4c"
+            app:compactCalendarShouldSelectFirstDayOfMonthOnScroll="true"
+            app:compactCalendarTargetHeight="250dp"
+            app:compactCalendarTextColor="#fff"
+            app:compactCalendarTextSize="12sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="49dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/prev_button"
+                android:layout_width="77dp"
+                android:layout_height="wrap_content"
+                android:background="#FFFFFF"
+                android:text="이전" />
+
+            <Button
+                android:id="@+id/show_with_animation_calendar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#FFFFFF"
+                android:text="달력" />
+
+            <Button
+                android:id="@+id/show_with_animation_calendar2"
+                android:layout_width="184dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#FFFFFF"
+                android:text="예약하기" />
+
+            <Button
+                android:id="@+id/next_button"
+                android:layout_width="76dp"
+                android:layout_height="wrap_content"
+                android:background="#FFFFFF"
+                android:text="다음" />
+
+            <Button
+                android:id="@+id/next_button2"
+                android:layout_width="118dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#FFFFFF"
+                android:text="다음" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="698dp"
+            android:orientation="vertical">
+
+            <ListView
+                android:id="@+id/bookings_listview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>
